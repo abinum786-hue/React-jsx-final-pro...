@@ -646,5 +646,92 @@ form button:hover {
   text-align: left;
 }
 
+/* ================= RESPONSIVE HERO IMAGE & PARTICLES ================= */
+
+/* Adjust hero-image and floating icons */
+@media (max-width: 1024px) {
+  .hero-image {
+    width: 300px;
+    height: auto;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .circle-rotate {
+    width: 300px;
+    height: 300px;
+    top: 30px;
+    left: 30px;
+  }
+
+  .icon {
+    width: 40px;
+  }
+
+  .icon1 { top: 10px; left: 10px; }
+  .icon2 { bottom: 20px; right: 10px; }
+  .icon3 { top: 150px; right: 0; }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .circle-rotate {
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: calc(50% - 100px);
+  }
+
+  .icon { width: 30px; }
+  .icon1 { top: 5px; left: 5px; }
+  .icon2 { bottom: 10px; right: 5px; }
+  .icon3 { top: 100px; right: 5px; }
+}
+
+/* Coding words animation */
+@media (max-width: 1024px) {
+  .coding-column {
+    left: 10px;
+    font-size: 16px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* hide coding words on small screens */
+  .coding-column {
+    display: none;
+  }
+}
+
+/* Adjust form-hero particles */
+@media (max-width: 1024px) {
+  .form-hero::before,
+  .form-hero::after {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-hero::before,
+  .form-hero::after {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 
 
